@@ -3,7 +3,7 @@
     .flex(column, space-around, nowrap, center);
 
     section{
-        margin: 1.5% 0%;
+        margin: 1% 0%;
         background-color: white;
         width: 60%;
         padding: 2%;
@@ -11,6 +11,10 @@
 
         &:nth-child(2n){
             text-align: right;
+
+            @media @mobile{
+                text-align: center;
+            }
         }
 
         h2{
@@ -39,6 +43,10 @@
                 
                 &:nth-child(2n){
                     text-align: right;
+
+                    @media @mobile{
+                        text-align: center;
+                    }
                 }
                 
                 @media @mobile{

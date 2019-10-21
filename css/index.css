@@ -271,7 +271,7 @@ img {
   align-items: center;
 }
 .main-content section {
-  margin: 1.5% 0%;
+  margin: 1% 0%;
   background-color: white;
   width: 60%;
   padding: 2%;
@@ -279,6 +279,11 @@ img {
 }
 .main-content section:nth-child(2n) {
   text-align: right;
+}
+@media (max-width: 500px) {
+  .main-content section:nth-child(2n) {
+    text-align: center;
+  }
 }
 .main-content section h2 {
   color: #603bbc;
@@ -309,6 +314,11 @@ img {
 }
 .main-content section .info p:nth-child(2n) {
   text-align: right;
+}
+@media (max-width: 500px) {
+  .main-content section .info p:nth-child(2n) {
+    text-align: center;
+  }
 }
 @media (max-width: 500px) {
   .main-content section .info p {
