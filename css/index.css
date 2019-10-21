@@ -1,8 +1,8 @@
 .header-footer-area {
   width: 100%;
-  background-color: #5E40BC;
+  background-color: #603bbc;
   padding: 30px 0;
-  color: #98FFE6;
+  color: #9dffe4;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -145,6 +145,7 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  background-image: url(/images/andrew-stutesman-l68Z6eF2peA-unsplash.jpg);
 }
 h1,
 h2,
@@ -180,10 +181,10 @@ img {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: #5E40BC;
+  background-color: #603bbc;
   padding: 30px 0;
-  color: #98FFE6;
-  border-bottom: 1px solid #98FFE6;
+  color: #9dffe4;
+  border-bottom: 1px solid #9dffe4;
 }
 @media (max-width: 500px) {
   .navbar {
@@ -196,6 +197,11 @@ img {
 }
 .navbar h1 {
   margin-left: 5%;
+  transition: 0.5s;
+}
+.navbar h1:hover {
+  color: #ffffff;
+  transition: 0.5s;
 }
 @media (max-width: 500px) {
   .navbar h1 {
@@ -220,7 +226,7 @@ img {
   width: 100%;
   font-size: 2.5rem;
   text-decoration: none;
-  color: #98FFE6;
+  color: #9dffe4;
   text-align: center;
   transition: 1s;
 }
@@ -236,11 +242,11 @@ img {
 }
 .footer-area {
   width: 100%;
-  background-color: #5E40BC;
+  background-color: #603bbc;
   padding: 30px 0;
-  color: #98FFE6;
+  color: #9dffe4;
   text-align: center;
   position: fixed;
   bottom: 0;
-  border-top: 1px solid #98FFE6;
+  border-top: 1px solid #9dffe4;
 }
