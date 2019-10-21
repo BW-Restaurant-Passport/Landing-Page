@@ -1,0 +1,117 @@
+.main-content{
+
+    .flex(column, space-around, nowrap, center);
+
+    section{
+        margin: 1.5% 0%;
+        background-color: white;
+        width: 60%;
+        padding: 2%;
+        border-radius: 10px;
+
+        &:nth-child(2n){
+            text-align: right;
+        }
+
+        h2{
+            color: @main-color;
+        }
+
+        @media @mobile{
+            text-align: center;
+            width: 90%;
+        }
+
+        .info{
+            .flex(row, space-around, nowrap, center);
+
+            img{
+                width: 20%;
+
+                @media @mobile{
+                    display: none;
+                }
+
+            }
+
+            p{
+                margin-right: 2%;
+                
+                &:nth-child(2n){
+                    text-align: right;
+                }
+                
+                @media @mobile{
+                    text-align: center;
+                }
+
+            }
+
+        }
+
+    }
+
+    // .flex(row, space-around, nowrap, flex-center);
+    // align-items: center;
+    // margin-top: 8%;
+    
+    // h1{
+    //     color: @secondary-color;
+    //     background-color: rgba(96, 59, 188, 0.8);
+    //     padding: 20px;
+    //     border: 2px solid @main-color;
+    //     border-radius: 10px;
+    // }
+
+    // .form-container{
+
+    //     width:25%;
+    //     padding: 25px 25px;
+    //     background-color: rgba(96, 59, 188, 0.8);
+    //     color: @secondary-color;
+    //     border-radius: 10px;
+    //     .flex(row, space-between, wrap, flex-start);
+
+    //     .choice{
+    //         .sign-in{
+    //             display: inline-block;
+    //         }
+    //     }
+
+    //     .sign-in{
+    //         display: none;
+    //         transition: 1s;
+    //     }
+
+    //     form{
+    //         .flex(column, space-between, wrap, flex-start);
+    //         width: 100%;
+
+    //         label{
+    //             width: 100%;
+    //             text-align: left;
+    //             font-size: 2.5rem;
+    //             margin-top: 20px;
+    //         }
+
+    //         input[type=text], input[type=password]{
+    //             width: 100%;
+    //             font-size: 2rem;
+    //             padding: 15px;
+    //             margin-top: 20px;
+    //         }
+
+    //         input[type=submit]{
+    //             text-align: center;
+    //             font-size: 2rem;
+    //             padding: 5px 25px;
+    //             margin-top: 20px;
+    //             background-color: @secondary-color;
+    //             color: @main-color;
+    //             border-radius: 100px;
+    //         }
+
+    //     }
+
+    // }
+}
