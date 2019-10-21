@@ -4,20 +4,20 @@
     .header-footer-area;
     border-bottom: 1px solid @secondary-color;
 
-    @media @mobile{
+    @media @small-desktop{
         .flex(column, center, nowrap, center);
     }
 
     h1{
         margin-left: 5%;
         transition: 0.5s;
-        
+
         &:hover{
             color: lighten(@secondary-color, 50%);
             transition: 0.5s;
         }
 
-        @media @mobile{
+        @media @small-desktop{
             margin-top: -15px;
             margin-bottom: 15px;
         }
@@ -27,7 +27,7 @@
         width: 50%;
         .flex(row, space-between, nowrap, center);
 
-        @media @mobile{
+        @media @small-desktop{
             width: 100%;
         }
 
@@ -41,7 +41,6 @@
 
             &:hover{
                 color: lighten(@secondary-color, 50%);
-                font-size: 3rem;
                 transition: 0.5s;
             }
 
