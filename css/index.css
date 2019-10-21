@@ -2,6 +2,7 @@
   width: 100%;
   background-color: #5E40BC;
   padding: 30px 0;
+  color: #98FFE6;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -181,11 +182,26 @@ img {
   width: 100%;
   background-color: #5E40BC;
   padding: 30px 0;
+  color: #98FFE6;
   border-bottom: 1px solid #98FFE6;
 }
+@media (max-width: 500px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .navbar h1 {
-  color: #98FFE6;
   margin-left: 5%;
+}
+@media (max-width: 500px) {
+  .navbar h1 {
+    margin-top: -15px;
+    margin-bottom: 15px;
+  }
 }
 .navbar nav {
   width: 50%;
@@ -195,16 +211,36 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .navbar nav {
+    width: 100%;
+  }
+}
 .navbar nav a {
   width: 100%;
   font-size: 2.5rem;
   text-decoration: none;
   color: #98FFE6;
   text-align: center;
+  transition: 1s;
+}
+.navbar nav a:hover {
+  color: #ffffff;
+  font-size: 3rem;
+  transition: 0.5s;
+}
+@media (max-width: 500px) {
+  .navbar nav a {
+    font-size: 2rem;
+  }
 }
 .footer-area {
   width: 100%;
   background-color: #5E40BC;
   padding: 30px 0;
+  color: #98FFE6;
   text-align: center;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid #98FFE6;
 }

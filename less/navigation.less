@@ -4,14 +4,25 @@
     .header-footer-area;
     border-bottom: 1px solid @secondary-color;
 
+    @media @mobile{
+        .flex(column, center, nowrap, center);
+    }
+
     h1{
-        color: @secondary-color;
         margin-left: 5%;
+        @media @mobile{
+            margin-top: -15px;
+            margin-bottom: 15px;
+        }
     }
 
     nav {
         width: 50%;
         .flex(row, space-between, nowrap, center);
+
+        @media @mobile{
+            width: 100%;
+        }
 
         a {
             width: 100%;
@@ -19,6 +30,17 @@
             text-decoration: none;
             color: @secondary-color;
             text-align: center;
+            transition: 1s;
+
+            &:hover{
+                color: lighten(@secondary-color, 50%);
+                font-size: 3rem;
+                transition: 0.5s;
+            }
+
+            @media @mobile{
+                font-size: 2rem;
+            }
 
         }
     }
