@@ -338,3 +338,18 @@ img {
     text-align: center;
   }
 }
+.main-content a {
+  text-decoration: none;
+  font-size: 3rem;
+  background-color: #9dffe4;
+  padding: 10px 20px;
+  border: 1px solid #603bbc;
+  border-radius: 10px;
+  margin: 15px 0;
+  display: none;
+}
+@media (max-width: 1200px) {
+  .main-content a {
+    display: inherit;
+  }
+}
