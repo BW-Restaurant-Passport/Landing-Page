@@ -1,51 +1,73 @@
-.navbar {
-  .flex(row, space-between, nowrap, flex-end);
-  .header-footer-area;
-//   border-bottom: 1px solid linear-gradient(to right, @secondary-color, @main-color);
-  height: 300px;
+header {
+  background-image: linear-gradient(to right, @main-color, @secondary-color);
+  
+  .welcome{
+      .flex(column, center, wrap, flex-start);
+      margin-left: 10%;
+    h2 {
+        color: white;
+        font-size: 5rem;
 
-  @media @small-desktop {
-    .flex(column, center, nowrap, center);
+        span{
+            color: @secondary-color;
+        }
+
+      }
+
+      a{
+          .get-started;
+      }
   }
 
-  h1 {
-    margin-left: 5%;
-    transition: 0.5s;
+  .navbar {
+    .flex(row, space-between, nowrap, flex-start);
+    .header-footer-area;
+    height: 200px;
 
-    &:hover {
-      color: lighten(@secondary-color, 50%);
+    @media @small-desktop {
+      .flex(column, center, nowrap, center);
+    }
+
+    h1 {
+      color: @secondary-color;
+      margin-left: 5%;
       transition: 0.5s;
-    }
-
-    @media @small-desktop {
-      margin-top: -15px;
-      margin-bottom: 15px;
-    }
-  }
-
-  nav {
-    width: 50%;
-    .flex(row, space-between, nowrap, center);
-
-    @media @small-desktop {
-      width: 100%;
-    }
-
-    a {
-      width: 100%;
-      font-size: 2.5rem;
-      text-decoration: none;
-      color: @main-color;
-      text-align: center;
-      transition: 1s;
 
       &:hover {
         color: lighten(@secondary-color, 50%);
         transition: 0.5s;
       }
 
-      @media @mobile {
-        font-size: 2rem;
+      @media @small-desktop {
+        margin-top: -15px;
+        margin-bottom: 15px;
+      }
+    }
+
+    nav {
+      width: 50%;
+      .flex(row, space-between, nowrap, center);
+
+      @media @small-desktop {
+        width: 100%;
+      }
+
+      a {
+        width: 100%;
+        font-size: 2.5rem;
+        text-decoration: none;
+        color: @main-color;
+        text-align: center;
+        transition: 1s;
+
+        &:hover {
+          color: lighten(@secondary-color, 50%);
+          transition: 0.5s;
+        }
+
+        @media @mobile {
+          font-size: 2rem;
+        }
       }
     }
   }

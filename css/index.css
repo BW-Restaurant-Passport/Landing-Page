@@ -1,9 +1,16 @@
 .header-footer-area {
   width: 100%;
-  background-color: #603bbc;
   padding: 30px 0;
-  color: #9dffe4;
-  background-image: linear-gradient(to right, #603bbc, #9dffe4);
+  color: #603bbc;
+}
+.get-started {
+  text-decoration: none;
+  font-size: 3rem;
+  background-color: #9dffe4;
+  padding: 10px 20px;
+  border: 1px solid #603bbc;
+  border-radius: 10px;
+  margin: 15px 0;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -174,21 +181,46 @@ img {
   max-width: 100%;
   height: auto;
 }
-.navbar {
+header {
+  background-image: linear-gradient(to right, #603bbc, #9dffe4);
+}
+header .welcome {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 10%;
+}
+header .welcome h2 {
+  color: white;
+  font-size: 5rem;
+}
+header .welcome h2 span {
+  color: #9dffe4;
+}
+header .welcome a {
+  text-decoration: none;
+  font-size: 3rem;
+  background-color: #9dffe4;
+  padding: 10px 20px;
+  border: 1px solid #603bbc;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+header .navbar {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
   width: 100%;
-  background-color: #603bbc;
   padding: 30px 0;
-  color: #9dffe4;
-  background-image: linear-gradient(to right, #603bbc, #9dffe4);
-  height: 300px;
+  color: #603bbc;
+  height: 200px;
 }
 @media (max-width: 1200px) {
-  .navbar {
+  header .navbar {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -196,21 +228,22 @@ img {
     align-items: center;
   }
 }
-.navbar h1 {
+header .navbar h1 {
+  color: #9dffe4;
   margin-left: 5%;
   transition: 0.5s;
 }
-.navbar h1:hover {
+header .navbar h1:hover {
   color: #ffffff;
   transition: 0.5s;
 }
 @media (max-width: 1200px) {
-  .navbar h1 {
+  header .navbar h1 {
     margin-top: -15px;
     margin-bottom: 15px;
   }
 }
-.navbar nav {
+header .navbar nav {
   width: 50%;
   display: flex;
   flex-direction: row;
@@ -219,11 +252,11 @@ img {
   align-items: center;
 }
 @media (max-width: 1200px) {
-  .navbar nav {
+  header .navbar nav {
     width: 100%;
   }
 }
-.navbar nav a {
+header .navbar nav a {
   width: 100%;
   font-size: 2.5rem;
   text-decoration: none;
@@ -231,21 +264,19 @@ img {
   text-align: center;
   transition: 1s;
 }
-.navbar nav a:hover {
+header .navbar nav a:hover {
   color: #ffffff;
   transition: 0.5s;
 }
 @media (max-width: 500px) {
-  .navbar nav a {
+  header .navbar nav a {
     font-size: 2rem;
   }
 }
 .footer-area {
   width: 100%;
-  background-color: #603bbc;
   padding: 30px 0;
-  color: #9dffe4;
-  background-image: linear-gradient(to right, #603bbc, #9dffe4);
+  color: #603bbc;
   text-align: center;
   border-top: 1px solid #9dffe4;
 }
@@ -256,29 +287,19 @@ img {
   justify-content: space-around;
   align-items: center;
 }
-@media (max-width: 1200px) {
-  .main-content {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-  }
-}
 .main-content section {
   background-color: white;
   width: 100%;
   padding: 5%;
   background-color: #9dffe4;
 }
-@media (max-width: 1200px) {
-  .main-content section {
-    width: 70%;
-  }
-}
 .main-content section:nth-child(2n) {
   text-align: right;
   background-color: #603bbc;
+  color: white;
+}
+.main-content section:nth-child(2n) h2 {
+  color: #9dffe4;
 }
 @media (max-width: 500px) {
   .main-content section:nth-child(2n) {
@@ -315,6 +336,7 @@ img {
 }
 .main-content section .info p:nth-child(2n) {
   text-align: right;
+  margin-right: 0;
 }
 @media (max-width: 500px) {
   .main-content section .info p:nth-child(2n) {
