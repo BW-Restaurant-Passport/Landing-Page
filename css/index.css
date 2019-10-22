@@ -190,7 +190,7 @@ header .welcome {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  margin-left: 10%;
+  margin-left: 15%;
 }
 header .welcome h2 {
   color: white;
@@ -207,6 +207,7 @@ header .welcome a {
   border: 1px solid #603bbc;
   border-radius: 10px;
   margin: 15px 0;
+  margin-bottom: 10%;
 }
 header .navbar {
   display: flex;
@@ -279,6 +280,28 @@ header .navbar nav a:hover {
   color: #603bbc;
   text-align: center;
   border-top: 1px solid #9dffe4;
+}
+.tabs {
+  margin: 5% 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.tabs a {
+  width: 15%;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2.5rem;
+  background-color: #9dffe4;
+  padding: 5% 0;
+  border-radius: 50px;
+}
+.tabs a:nth-child(2n) {
+  background-color: #603bbc;
+  color: #9dffe4;
 }
 .main-content {
   display: flex;
