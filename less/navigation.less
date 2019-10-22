@@ -1,54 +1,51 @@
-.navbar{
+.navbar {
+  .flex(row, space-between, nowrap, center);
+  .header-footer-area;
+  border-bottom: 1px solid @secondary-color;
 
+  @media @small-desktop {
+    .flex(column, center, nowrap, center);
+  }
+
+  h1 {
+    margin-left: 5%;
+    transition: 0.5s;
+
+    &:hover {
+      color: lighten(@secondary-color, 50%);
+      transition: 0.5s;
+    }
+
+    @media @small-desktop {
+      margin-top: -15px;
+      margin-bottom: 15px;
+    }
+  }
+
+  nav {
+    width: 50%;
     .flex(row, space-between, nowrap, center);
-    .header-footer-area;
-    border-bottom: 1px solid @secondary-color;
 
-    @media @mobile{
-        .flex(column, center, nowrap, center);
+    @media @small-desktop {
+      width: 100%;
     }
 
-    h1{
-        margin-left: 5%;
+    a {
+      width: 100%;
+      font-size: 2.5rem;
+      text-decoration: none;
+      color: @secondary-color;
+      text-align: center;
+      transition: 1s;
+
+      &:hover {
+        color: lighten(@secondary-color, 50%);
         transition: 0.5s;
-        
-        &:hover{
-            color: lighten(@secondary-color, 50%);
-            transition: 0.5s;
-        }
+      }
 
-        @media @mobile{
-            margin-top: -15px;
-            margin-bottom: 15px;
-        }
+      @media @mobile {
+        font-size: 2rem;
+      }
     }
-
-    nav {
-        width: 50%;
-        .flex(row, space-between, nowrap, center);
-
-        @media @mobile{
-            width: 100%;
-        }
-
-        a {
-            width: 100%;
-            font-size: 2.5rem;
-            text-decoration: none;
-            color: @secondary-color;
-            text-align: center;
-            transition: 1s;
-
-            &:hover{
-                color: lighten(@secondary-color, 50%);
-                font-size: 3rem;
-                transition: 0.5s;
-            }
-
-            @media @mobile{
-                font-size: 2rem;
-            }
-
-        }
-    }
+  }
 }
