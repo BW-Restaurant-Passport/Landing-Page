@@ -125,7 +125,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -144,7 +144,7 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-image: url(/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -166,7 +166,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
 }
 h1 {
   font-size: 3rem;
@@ -290,6 +290,7 @@ img {
   .main-content section {
     text-align: center;
     width: 90%;
+    border: 1px solid #603bbc;
   }
 }
 .main-content section .info {
