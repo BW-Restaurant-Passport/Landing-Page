@@ -1,10 +1,14 @@
 .tabs{
     margin: 5% 0;
     width: 100%;
-    
     .flex(row, space-around, nowrap, center);
 
+    @media @small-desktop{
+        .flex(row, space-around, wrap, center);
+    }
+
     a{
+        box-shadow: 5px 2px lightgray;
         width: 15%;
         text-decoration: none;
         text-align: center;
@@ -12,6 +16,11 @@
         background-color: @secondary-color;
         padding: 5% 0;
         border-radius: 50px;
+
+        @media @small-desktop{
+            width: 40%;
+            margin-top: 2%;
+        }
 
         &:nth-child(2n){
             background-color: @main-color;
@@ -53,8 +62,6 @@
 
     @media @mobile {
       text-align: center;
-      width: 90%;
-      border: 1px solid @main-color;
     }
 
     .info {

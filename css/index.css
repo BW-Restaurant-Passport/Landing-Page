@@ -290,7 +290,17 @@ header .navbar nav a:hover {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 1200px) {
+  .tabs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 .tabs a {
+  box-shadow: 5px 2px lightgray;
   width: 15%;
   text-decoration: none;
   text-align: center;
@@ -298,6 +308,12 @@ header .navbar nav a:hover {
   background-color: #9dffe4;
   padding: 5% 0;
   border-radius: 50px;
+}
+@media (max-width: 1200px) {
+  .tabs a {
+    width: 40%;
+    margin-top: 2%;
+  }
 }
 .tabs a:nth-child(2n) {
   background-color: #603bbc;
@@ -335,8 +351,6 @@ header .navbar nav a:hover {
 @media (max-width: 500px) {
   .main-content section {
     text-align: center;
-    width: 90%;
-    border: 1px solid #603bbc;
   }
 }
 .main-content section .info {
