@@ -353,3 +353,48 @@ img {
     display: inherit;
   }
 }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.middle-content .about {
+  display: flex;
+  border: 5px solid red;
+}
+.middle-content .about .description {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.middle-content .about h3 {
+  font-size: 2.5rem;
+}
+.middle-content .about p {
+  font-size: 1.5rem;
+}
+.who-we-are {
+  display: flex;
+  justify-content: stretch;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.who-we-are .team-member {
+  border: 5px solid yellow;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.who-we-are img {
+  border: 5px solid green;
+  width: 100%;
+  min-width: 300px;
+  max-width: 300px;
+  height: auto;
+}
+.who-we-are p {
+  border: 5px solid red;
+  font-size: 2rem;
+}
