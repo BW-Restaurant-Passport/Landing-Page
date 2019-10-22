@@ -12,6 +12,11 @@
   border-radius: 50px;
   margin: 15px 0;
   color: #603bbc;
+  transition: 0.5s;
+}
+.get-started:hover {
+  background-color: #ffffff;
+  transition: 0.5s;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -209,7 +214,12 @@ header .welcome a {
   border-radius: 50px;
   margin: 15px 0;
   color: #603bbc;
+  transition: 0.5s;
   margin-bottom: 10%;
+}
+header .welcome a:hover {
+  background-color: #ffffff;
+  transition: 0.5s;
 }
 header .navbar {
   display: flex;
@@ -282,6 +292,7 @@ header .navbar nav a:hover {
   color: #603bbc;
   text-align: center;
   border-top: 1px solid #9dffe4;
+  background-color: #9dffe4;
 }
 .tabs {
   margin: 5% 0;
@@ -302,15 +313,17 @@ header .navbar nav a:hover {
   }
 }
 .tabs a {
-  box-shadow: 5px 2px lightgray;
+  box-shadow: 5px 5px lightgray;
   width: 15%;
   text-decoration: none;
   text-align: center;
   font-size: 2.5rem;
   background-color: #9dffe4;
   padding: 5% 0;
+  border: 3px solid #603bbc;
   border-radius: 50px;
   color: #603bbc;
+  transition: 0.5s;
 }
 @media (max-width: 1200px) {
   .tabs a {
@@ -327,6 +340,11 @@ header .navbar nav a:hover {
 .tabs a:nth-child(2n) {
   background-color: #603bbc;
   color: #9dffe4;
+  border: 3px solid #9dffe4;
+}
+.tabs a:hover {
+  box-shadow: 0px 0px;
+  transition: 0.5s;
 }
 .main-content {
   display: flex;
@@ -394,7 +412,7 @@ header .navbar nav a:hover {
     text-align: center;
   }
 }
-.main-content a {
+.main-content section a {
   text-decoration: none;
   font-size: 3rem;
   background-color: #9dffe4;
@@ -403,10 +421,17 @@ header .navbar nav a:hover {
   border-radius: 50px;
   margin: 15px 0;
   color: #603bbc;
+  transition: 0.5s;
+  width: 50%;
+  margin: 0 auto;
   display: none;
 }
+.main-content section a:hover {
+  background-color: #ffffff;
+  transition: 0.5s;
+}
 @media (max-width: 1200px) {
-  .main-content a {
+  .main-content section a {
     display: inherit;
   }
 }
