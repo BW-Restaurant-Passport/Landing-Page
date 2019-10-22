@@ -6,11 +6,10 @@
   }
 
   section {
-    margin: 1% 0%;
     background-color: white;
-    width: 40%;
-    padding: 2%;
-    border-radius: 10px;
+    width: 100%;
+    padding: 5%;
+    background-color: @secondary-color;
 
     @media @small-desktop{
         width: 70%;
@@ -18,6 +17,8 @@
 
     &:nth-child(2n) {
       text-align: right;
+      background-color: @main-color;
+
 
       @media @mobile {
         text-align: center;
@@ -38,7 +39,7 @@
       .flex(row, space-around, nowrap, center);
 
       img {
-        width: 20%;
+        width: 30%;
 
         @media @mobile {
           display: none;
