@@ -301,7 +301,7 @@ header .navbar nav a:hover {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
-  align-items: center;
+  align-items: stretch;
 }
 @media (max-width: 1200px) {
   .tabs {
@@ -313,7 +313,7 @@ header .navbar nav a:hover {
   }
 }
 .tabs a {
-  box-shadow: 5px 5px lightgray;
+  box-shadow: 5px 5px #757171;
   width: 15%;
   text-decoration: none;
   text-align: center;
