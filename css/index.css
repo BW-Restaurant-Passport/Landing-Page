@@ -11,6 +11,7 @@
   border: 1px solid #603bbc;
   border-radius: 50px;
   margin: 15px 0;
+  color: #603bbc;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -207,6 +208,7 @@ header .welcome a {
   border: 1px solid #603bbc;
   border-radius: 50px;
   margin: 15px 0;
+  color: #603bbc;
   margin-bottom: 10%;
 }
 header .navbar {
@@ -308,6 +310,7 @@ header .navbar nav a:hover {
   background-color: #9dffe4;
   padding: 5% 0;
   border-radius: 50px;
+  color: #603bbc;
 }
 @media (max-width: 1200px) {
   .tabs a {
@@ -399,6 +402,7 @@ header .navbar nav a:hover {
   border: 1px solid #603bbc;
   border-radius: 50px;
   margin: 15px 0;
+  color: #603bbc;
   display: none;
 }
 @media (max-width: 1200px) {
