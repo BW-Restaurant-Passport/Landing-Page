@@ -1,7 +1,9 @@
 .navbar {
-  .flex(row, space-between, nowrap, center);
+  .flex(row, space-between, nowrap, flex-end);
   .header-footer-area;
   border-bottom: 1px solid @secondary-color;
+  height: 400px;
+  background-image: linear-gradient(to right, @main-color, @secondary-color);
 
   @media @small-desktop {
     .flex(column, center, nowrap, center);
@@ -34,7 +36,7 @@
       width: 100%;
       font-size: 2.5rem;
       text-decoration: none;
-      color: @secondary-color;
+      color: @main-color;
       text-align: center;
       transition: 1s;
 
