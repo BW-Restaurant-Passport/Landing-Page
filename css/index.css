@@ -200,14 +200,14 @@ header .welcome {
   margin-left: 15%;
   margin-top: 6%;
 }
-@media (max-width: 500px) {
+@media (max-width: 1200px) {
   header .welcome {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 2% auto;
     text-align: center;
   }
 }
