@@ -1,8 +1,22 @@
 .header-footer-area {
   width: 100%;
-  background-color: #603bbc;
   padding: 30px 0;
-  color: #9dffe4;
+  color: #603bbc;
+}
+.get-started {
+  text-decoration: none;
+  font-size: 3rem;
+  background-color: #9dffe4;
+  padding: 10px 20px;
+  border: 1px solid #603bbc;
+  border-radius: 50px;
+  margin: 15px 0;
+  color: #603bbc;
+  transition: 0.5s;
+}
+.get-started:hover {
+  background-color: #ffffff;
+  transition: 0.5s;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -145,21 +159,6 @@ html {
 html,
 body {
   font-family: "Roboto", sans-serif;
-  background-image: url(/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media (max-width: 1200px) {
-  html,
-  body {
-    background-image: url(/images/joyce-romero-FP1nAPbqipw-unsplash.jpg);
-  }
-}
-@media (max-width: 500px) {
-  html,
-  body {
-    background-image: url(/images/chris-liverani-oCsaxvGCehM-unsplash.jpg);
-  }
 }
 h1,
 h2,
@@ -188,20 +187,53 @@ img {
   max-width: 100%;
   height: auto;
 }
-.navbar {
+header {
+  background-image: linear-gradient(to right, #603bbc, #9dffe4);
+}
+header .welcome {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 15%;
+}
+header .welcome h2 {
+  color: white;
+  font-size: 5rem;
+}
+header .welcome h2 span {
+  color: #9dffe4;
+}
+header .welcome a {
+  text-decoration: none;
+  font-size: 3rem;
+  background-color: #9dffe4;
+  padding: 10px 20px;
+  border: 1px solid #603bbc;
+  border-radius: 50px;
+  margin: 15px 0;
+  color: #603bbc;
+  transition: 0.5s;
+  margin-bottom: 10%;
+}
+header .welcome a:hover {
+  background-color: #ffffff;
+  transition: 0.5s;
+}
+header .navbar {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
-  background-color: #603bbc;
   padding: 30px 0;
-  color: #9dffe4;
-  border-bottom: 1px solid #9dffe4;
+  color: #603bbc;
+  height: 200px;
 }
 @media (max-width: 1200px) {
-  .navbar {
+  header .navbar {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -209,21 +241,22 @@ img {
     align-items: center;
   }
 }
-.navbar h1 {
+header .navbar h1 {
+  color: #9dffe4;
   margin-left: 5%;
   transition: 0.5s;
 }
-.navbar h1:hover {
+header .navbar h1:hover {
   color: #ffffff;
   transition: 0.5s;
 }
 @media (max-width: 1200px) {
-  .navbar h1 {
+  header .navbar h1 {
     margin-top: -15px;
     margin-bottom: 15px;
   }
 }
-.navbar nav {
+header .navbar nav {
   width: 50%;
   display: flex;
   flex-direction: row;
@@ -232,65 +265,107 @@ img {
   align-items: center;
 }
 @media (max-width: 1200px) {
-  .navbar nav {
+  header .navbar nav {
     width: 100%;
   }
 }
-.navbar nav a {
+header .navbar nav a {
   width: 100%;
   font-size: 2.5rem;
   text-decoration: none;
-  color: #9dffe4;
+  color: #603bbc;
   text-align: center;
   transition: 1s;
 }
-.navbar nav a:hover {
+header .navbar nav a:hover {
   color: #ffffff;
   transition: 0.5s;
 }
 @media (max-width: 500px) {
-  .navbar nav a {
+  header .navbar nav a {
     font-size: 2rem;
   }
 }
 .footer-area {
   width: 100%;
-  background-color: #603bbc;
   padding: 30px 0;
-  color: #9dffe4;
+  color: #603bbc;
   text-align: center;
   border-top: 1px solid #9dffe4;
+  background-color: #9dffe4;
 }
-.main-content {
+.tabs {
+  margin: 5% 0;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-around;
-  align-items: center;
+  align-items: stretch;
 }
 @media (max-width: 1200px) {
-  .main-content {
+  .tabs {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
   }
 }
-.main-content section {
-  margin: 1% 0%;
-  background-color: white;
-  width: 40%;
-  padding: 2%;
-  border-radius: 10px;
+.tabs a {
+  box-shadow: 5px 5px #757171;
+  width: 15%;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2.5rem;
+  background-color: #9dffe4;
+  padding: 5% 0;
+  border: 3px solid #603bbc;
+  border-radius: 50px;
+  color: #603bbc;
+  transition: 0.5s;
 }
 @media (max-width: 1200px) {
-  .main-content section {
-    width: 70%;
+  .tabs a {
+    width: 40%;
+    margin-top: 2%;
   }
+}
+@media (max-width: 500px) {
+  .tabs a {
+    width: 80%;
+    margin-top: 2%;
+  }
+}
+.tabs a:nth-child(2n) {
+  background-color: #603bbc;
+  color: #9dffe4;
+  border: 3px solid #9dffe4;
+}
+.tabs a:hover {
+  box-shadow: 0px 0px;
+  transition: 0.5s;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-content section {
+  background-color: white;
+  width: 100%;
+  padding: 5%;
+  background-color: #9dffe4;
 }
 .main-content section:nth-child(2n) {
   text-align: right;
+  background-color: #603bbc;
+  color: white;
+}
+.main-content section:nth-child(2n) h2 {
+  color: #9dffe4;
 }
 @media (max-width: 500px) {
   .main-content section:nth-child(2n) {
@@ -303,8 +378,6 @@ img {
 @media (max-width: 500px) {
   .main-content section {
     text-align: center;
-    width: 90%;
-    border: 1px solid #603bbc;
   }
 }
 .main-content section .info {
@@ -315,7 +388,7 @@ img {
   align-items: center;
 }
 .main-content section .info img {
-  width: 20%;
+  width: 30%;
 }
 @media (max-width: 500px) {
   .main-content section .info img {
@@ -327,6 +400,7 @@ img {
 }
 .main-content section .info p:nth-child(2n) {
   text-align: right;
+  margin-right: 0;
 }
 @media (max-width: 500px) {
   .main-content section .info p:nth-child(2n) {
@@ -338,18 +412,32 @@ img {
     text-align: center;
   }
 }
-.main-content a {
+.main-content section a {
   text-decoration: none;
   font-size: 3rem;
   background-color: #9dffe4;
   padding: 10px 20px;
   border: 1px solid #603bbc;
-  border-radius: 10px;
+  border-radius: 50px;
   margin: 15px 0;
+  color: #603bbc;
+  transition: 0.5s;
+  width: 30%;
+  margin: 0 auto;
   display: none;
+  text-align: center;
+}
+.main-content section a:hover {
+  background-color: #ffffff;
+  transition: 0.5s;
 }
 @media (max-width: 1200px) {
-  .main-content a {
-    display: inherit;
+  .main-content section a {
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  .main-content section a {
+    width: 50%;
   }
 }
