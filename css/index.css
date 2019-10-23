@@ -411,7 +411,7 @@ header .navbar nav a:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .main-content section .info img {
@@ -424,6 +424,7 @@ header .navbar nav a:hover {
 }
 .main-content section .info p {
   margin-right: 2%;
+  width: 40%;
 }
 .main-content section .info p:nth-child(2n) {
   text-align: right;
