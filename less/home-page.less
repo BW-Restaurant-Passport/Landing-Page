@@ -1,45 +1,61 @@
-.tabs {
-  margin: 5% 0;
-  width: 100%;
-  .flex(row, space-around, nowrap, stretch);
-
-  @media @small-desktop {
-    .flex(row, space-around, wrap, center);
-  }
-
-  a {
-    box-shadow: 5px 5px #757171;
-    width: 15%;
-    text-decoration: none;
-    text-align: center;
-    font-size: 2.3rem;
-    background-color: @secondary-color;
-    padding: 4% 0;
-    border: 3px solid @main-color;
-    border-radius: 50px;
+.tabs-section {
+  h2 {
     color: @main-color;
-    transition: 0.5s;
-
-    @media @small-desktop {
-      width: 40%;
-      margin-top: 2%;
-    }
+    text-align: center;
+    margin-top: 2%;
 
     @media @mobile {
-      width: 80%;
-      margin-top: 2%;
+      display: none;
+    }
+  }
+
+  .tabs {
+    margin: 5% 0;
+    width: 100%;
+    .flex(row, space-around, nowrap, stretch);
+
+    @media @laptop {
+      .flex(row, space-around, wrap, center);
     }
 
-    &:nth-child(2n) {
-      background-color: @main-color;
-      color: @secondary-color;
-      border: 3px solid @secondary-color;
-    }
-
-    &:hover {
-      // background-color: darken( 5%);
-      box-shadow: 0px 0px;
+    a {
+      box-shadow: 5px 5px #c9ccda;
+      width: 15%;
+      text-decoration: none;
+      text-align: center;
+      font-size: 2.3rem;
+      background-color: @secondary-color;
+      padding: 4% 0;
+      border-radius: 5px;
+      color: @main-color;
       transition: 0.5s;
+
+      @media @laptop {
+        width: 30%;
+        margin-top: 2%;
+      }
+
+      @media @tablet {
+        width: 40%;
+        margin-top: 2%;
+      }
+
+      @media @mobile {
+        width: 80%;
+        margin-top: 2%;
+      }
+
+      &:nth-child(2n) {
+        background-color: @main-color;
+        color: @secondary-color;
+        // border: 3px solid @secondary-color;
+      }
+
+      &:hover {
+        // background-color: darken( 5%);
+        box-shadow: 0px 0px;
+        transition: 0.5s;
+      }
     }
   }
 }
@@ -111,14 +127,13 @@
       display: none;
       text-align: center;
 
-      @media @small-desktop {
+      @media @tablet {
         display: block;
       }
 
-      @media @mobile{
+      @media @mobile {
         width: 50%;
       }
-
     }
   }
 }
