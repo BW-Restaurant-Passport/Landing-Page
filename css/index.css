@@ -5,6 +5,7 @@
 }
 .get-started {
   text-decoration: none;
+  text-align: center;
   font-size: 3rem;
   background-color: #9dffe4;
   padding: 10px 20px;
@@ -171,7 +172,7 @@ h1 {
   font-size: 3rem;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 4rem;
   padding-bottom: 10px;
 }
 h4 {
@@ -198,6 +199,17 @@ header .welcome {
   align-items: flex-start;
   margin-left: 15%;
 }
+@media (max-width: 500px) {
+  header .welcome {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
 header .welcome h2 {
   color: white;
   font-size: 5rem;
@@ -207,6 +219,7 @@ header .welcome h2 span {
 }
 header .welcome a {
   text-decoration: none;
+  text-align: center;
   font-size: 3rem;
   background-color: #9dffe4;
   padding: 10px 20px;
@@ -254,6 +267,7 @@ header .navbar h1:hover {
   header .navbar h1 {
     margin-top: -15px;
     margin-bottom: 15px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   }
 }
 header .navbar nav {
@@ -317,9 +331,9 @@ header .navbar nav a:hover {
   width: 15%;
   text-decoration: none;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   background-color: #9dffe4;
-  padding: 5% 0;
+  padding: 4% 0;
   border: 3px solid #603bbc;
   border-radius: 50px;
   color: #603bbc;
