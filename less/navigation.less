@@ -4,6 +4,7 @@ header {
   .welcome {
     .flex(column, center, wrap, flex-start);
     margin-left: 15%;
+    margin-top: 6%;
 
     @media @mobile{
       .flex(column, center, wrap, center);
@@ -23,14 +24,13 @@ header {
     a {
       .get-started;
       margin-bottom: 10%;
-      
+
     }
   }
 
   .navbar {
     .flex(row, space-between, nowrap, flex-start);
     .header-footer-area;
-    height: 200px;
 
     @media @small-desktop {
       .flex(column, center, nowrap, center);
@@ -49,7 +49,6 @@ header {
       @media @small-desktop {
         margin-top: -15px;
         margin-bottom: 15px;
-        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
       }
     }
 
