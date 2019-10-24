@@ -1,50 +1,91 @@
-.navbar {
-  .flex(row, space-between, nowrap, center);
-  .header-footer-area;
-  border-bottom: 1px solid @secondary-color;
+header {
+  background-image: linear-gradient(to right, @main-color, @secondary-color);
 
-  @media @small-desktop {
-    .flex(column, center, nowrap, center);
-  }
+  .welcome {
+    .flex(column, center, wrap, flex-start);
+    margin-left: 15%;
+    margin-top: 6%;
 
-  h1 {
-    margin-left: 5%;
-    transition: 0.5s;
-
-    &:hover {
-      color: lighten(@secondary-color, 50%);
-      transition: 0.5s;
+    @media @tablet {
+      .flex(column, center, wrap, center);
+      margin: 3% auto;
+      text-align: center;
     }
 
-    @media @small-desktop {
-      margin-top: -15px;
-      margin-bottom: 15px;
-    }
-  }
+    h2 {
+      color: white;
+      font-size: 5rem;
 
-  nav {
-    width: 50%;
-    .flex(row, space-between, nowrap, center);
-
-    @media @small-desktop {
-      width: 100%;
+      span {
+        color: @secondary-color;
+      }
     }
 
     a {
-      width: 100%;
-      font-size: 2.5rem;
-      text-decoration: none;
+      .get-started;
+      margin-bottom: 10%;
+    }
+  }
+
+  .navbar {
+    .flex(row, space-between, nowrap, flex-start);
+    .header-footer-area;
+
+    @media @tablet {
+      .flex(column, center, nowrap, center);
+    }
+
+    h1 {
       color: @secondary-color;
-      text-align: center;
-      transition: 1s;
+      margin-left: 5%;
+      transition: 0.5s;
 
       &:hover {
         color: lighten(@secondary-color, 50%);
         transition: 0.5s;
+        cursor: pointer;
+      }
+
+      @media @tablet {
+        margin-top: -15px;
+        margin-bottom: 15px;
+      }
+    }
+
+    nav {
+      width: 50%;
+      .flex(row, space-between, nowrap, center);
+
+      @media @tablet {
+        width: 100%;
       }
 
       @media @mobile {
-        font-size: 2rem;
+        .flex(column, space-between, nowrap, center);
+      }
+
+      a {
+        width: 100%;
+        font-size: 2.5rem;
+        text-decoration: none;
+        color: @main-color;
+        text-align: center;
+        transition: 1s;
+
+        @media @tablet{
+            color: black;
+        }
+
+        &:hover {
+          color: lighten(@secondary-color, 50%);
+          transition: 0.5s;
+        }
+
+        @media @mobile {
+          font-size: 3rem;
+          margin: 5% 0;
+          color: @main-color;
+        }
       }
     }
   }

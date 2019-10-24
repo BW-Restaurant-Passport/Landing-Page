@@ -1,23 +1,80 @@
-.main-content {
-  .flex(row, space-around, wrap, center);
+.tabs-section {
+  h2 {
+    color: @main-color;
+    text-align: center;
+    margin-top: 2%;
 
-  @media @small-desktop{
-    .flex(column, space-around, nowrap, center);
+    @media @mobile {
+      display: none;
+    }
   }
 
-  section {
-    margin: 1% 0%;
-    background-color: white;
-    width: 40%;
-    padding: 2%;
-    border-radius: 10px;
+  .tabs {
+    margin: 5% 0;
+    width: 100%;
+    .flex(row, space-around, nowrap, stretch);
 
-    @media @small-desktop{
-        width: 70%;
+    @media @laptop {
+      .flex(row, space-around, wrap, center);
     }
+
+    a {
+      box-shadow: 5px 5px #c9ccda;
+      width: 15%;
+      text-decoration: none;
+      text-align: center;
+      font-size: 2.3rem;
+      background-color: @secondary-color;
+      padding: 4% 0;
+      border-radius: 5px;
+      color: @main-color;
+      transition: 0.5s;
+
+      @media @laptop {
+        width: 30%;
+        margin-top: 2%;
+      }
+
+      @media @tablet {
+        width: 40%;
+        margin-top: 2%;
+      }
+
+      @media @mobile {
+        width: 80%;
+        margin-top: 2%;
+      }
+
+      &:nth-child(2n) {
+        background-color: @main-color;
+        color: @secondary-color;
+      }
+
+      &:hover {
+        box-shadow: 0px 0px;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+.main-content {
+  .flex(column, space-around, wrap, center);
+
+  section {
+    background-color: white;
+    width: 100%;
+    padding: 5%;
+    background-color: @secondary-color;
 
     &:nth-child(2n) {
       text-align: right;
+      background-color: @main-color;
+      color: white;
+
+      h2 {
+        color: @secondary-color;
+      }
 
       @media @mobile {
         text-align: center;
@@ -30,15 +87,13 @@
 
     @media @mobile {
       text-align: center;
-      width: 90%;
-      border: 1px solid @main-color;
     }
 
     .info {
-      .flex(row, space-around, nowrap, center);
+      .flex(row, space-between, nowrap, center);
 
       img {
-        width: 20%;
+        width: 30%;
 
         @media @mobile {
           display: none;
@@ -47,9 +102,11 @@
 
       p {
         margin-right: 2%;
+        width: 50%;
 
         &:nth-child(2n) {
           text-align: right;
+          margin-right: 0;
 
           @media @mobile {
             text-align: center;
@@ -58,25 +115,25 @@
 
         @media @mobile {
           text-align: center;
+          width: 100%;
         }
       }
     }
-  }
 
-a{
-    text-decoration: none;
-    font-size: 3rem;
-    background-color: @secondary-color;
-    padding: 10px 20px;
-    border: 1px solid @main-color;
-    border-radius: 10px;
-    margin: 15px 0;
-    display: none;
+    a {
+      .get-started();
+      width: 30%;
+      margin: 0 auto;
+      display: none;
+      text-align: center;
 
-    @media @small-desktop{
-        display: inherit;
+      @media @tablet {
+        display: block;
+      }
+
+      @media @mobile {
+        width: 50%;
+      }
     }
-
-}
-
+  }
 }
