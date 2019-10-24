@@ -5,11 +5,12 @@
 }
 .get-started {
   text-decoration: none;
+  text-align: center;
   font-size: 3rem;
   background-color: #9dffe4;
   padding: 10px 20px;
   border: 1px solid #603bbc;
-  border-radius: 50px;
+  border-radius: 5px;
   margin: 15px 0;
   color: #603bbc;
   transition: 0.5s;
@@ -171,7 +172,7 @@ h1 {
   font-size: 3rem;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 4rem;
   padding-bottom: 10px;
 }
 h4 {
@@ -197,6 +198,18 @@ header .welcome {
   justify-content: center;
   align-items: flex-start;
   margin-left: 15%;
+  margin-top: 6%;
+}
+@media (max-width: 1200px) {
+  header .welcome {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 3% auto;
+    text-align: center;
+  }
 }
 header .welcome h2 {
   color: white;
@@ -207,11 +220,12 @@ header .welcome h2 span {
 }
 header .welcome a {
   text-decoration: none;
+  text-align: center;
   font-size: 3rem;
   background-color: #9dffe4;
   padding: 10px 20px;
   border: 1px solid #603bbc;
-  border-radius: 50px;
+  border-radius: 5px;
   margin: 15px 0;
   color: #603bbc;
   transition: 0.5s;
@@ -230,7 +244,6 @@ header .navbar {
   width: 100%;
   padding: 30px 0;
   color: #603bbc;
-  height: 200px;
 }
 @media (max-width: 1200px) {
   header .navbar {
@@ -249,6 +262,7 @@ header .navbar h1 {
 header .navbar h1:hover {
   color: #ffffff;
   transition: 0.5s;
+  cursor: pointer;
 }
 @media (max-width: 1200px) {
   header .navbar h1 {
@@ -269,6 +283,15 @@ header .navbar nav {
     width: 100%;
   }
 }
+@media (max-width: 500px) {
+  header .navbar nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 header .navbar nav a {
   width: 100%;
   font-size: 2.5rem;
@@ -277,13 +300,20 @@ header .navbar nav a {
   text-align: center;
   transition: 1s;
 }
+@media (max-width: 1200px) {
+  header .navbar nav a {
+    color: black;
+  }
+}
 header .navbar nav a:hover {
   color: #ffffff;
   transition: 0.5s;
 }
 @media (max-width: 500px) {
   header .navbar nav a {
-    font-size: 2rem;
+    font-size: 3rem;
+    margin: 5% 0;
+    color: #603bbc;
   }
 }
 .footer-area {
@@ -294,7 +324,17 @@ header .navbar nav a:hover {
   border-top: 1px solid #9dffe4;
   background-color: #9dffe4;
 }
-.tabs {
+.tabs-section h2 {
+  color: #603bbc;
+  text-align: center;
+  margin-top: 2%;
+}
+@media (max-width: 500px) {
+  .tabs-section h2 {
+    display: none;
+  }
+}
+.tabs-section .tabs {
   margin: 5% 0;
   width: 100%;
   display: flex;
@@ -303,8 +343,8 @@ header .navbar nav a:hover {
   justify-content: space-around;
   align-items: stretch;
 }
-@media (max-width: 1200px) {
-  .tabs {
+@media (max-width: 1500px) {
+  .tabs-section .tabs {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -312,37 +352,41 @@ header .navbar nav a:hover {
     align-items: center;
   }
 }
-.tabs a {
-  box-shadow: 5px 5px #757171;
+.tabs-section .tabs a {
+  box-shadow: 5px 5px #c9ccda;
   width: 15%;
   text-decoration: none;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   background-color: #9dffe4;
-  padding: 5% 0;
-  border: 3px solid #603bbc;
-  border-radius: 50px;
+  padding: 4% 0;
+  border-radius: 5px;
   color: #603bbc;
   transition: 0.5s;
 }
+@media (max-width: 1500px) {
+  .tabs-section .tabs a {
+    width: 30%;
+    margin-top: 2%;
+  }
+}
 @media (max-width: 1200px) {
-  .tabs a {
+  .tabs-section .tabs a {
     width: 40%;
     margin-top: 2%;
   }
 }
 @media (max-width: 500px) {
-  .tabs a {
+  .tabs-section .tabs a {
     width: 80%;
     margin-top: 2%;
   }
 }
-.tabs a:nth-child(2n) {
+.tabs-section .tabs a:nth-child(2n) {
   background-color: #603bbc;
   color: #9dffe4;
-  border: 3px solid #9dffe4;
 }
-.tabs a:hover {
+.tabs-section .tabs a:hover {
   box-shadow: 0px 0px;
   transition: 0.5s;
 }
@@ -384,7 +428,7 @@ header .navbar nav a:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .main-content section .info img {
@@ -397,6 +441,7 @@ header .navbar nav a:hover {
 }
 .main-content section .info p {
   margin-right: 2%;
+  width: 50%;
 }
 .main-content section .info p:nth-child(2n) {
   text-align: right;
@@ -410,6 +455,7 @@ header .navbar nav a:hover {
 @media (max-width: 500px) {
   .main-content section .info p {
     text-align: center;
+    width: 100%;
   }
 }
 .main-content section a {
@@ -418,7 +464,7 @@ header .navbar nav a:hover {
   background-color: #9dffe4;
   padding: 10px 20px;
   border: 1px solid #603bbc;
-  border-radius: 50px;
+  border-radius: 5px;
   margin: 15px 0;
   color: #603bbc;
   transition: 0.5s;

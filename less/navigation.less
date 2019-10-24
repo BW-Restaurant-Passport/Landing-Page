@@ -4,6 +4,14 @@ header {
   .welcome {
     .flex(column, center, wrap, flex-start);
     margin-left: 15%;
+    margin-top: 6%;
+
+    @media @tablet {
+      .flex(column, center, wrap, center);
+      margin: 3% auto;
+      text-align: center;
+    }
+
     h2 {
       color: white;
       font-size: 5rem;
@@ -22,9 +30,8 @@ header {
   .navbar {
     .flex(row, space-between, nowrap, flex-start);
     .header-footer-area;
-    height: 200px;
 
-    @media @small-desktop {
+    @media @tablet {
       .flex(column, center, nowrap, center);
     }
 
@@ -36,9 +43,10 @@ header {
       &:hover {
         color: lighten(@secondary-color, 50%);
         transition: 0.5s;
+        cursor: pointer;
       }
 
-      @media @small-desktop {
+      @media @tablet {
         margin-top: -15px;
         margin-bottom: 15px;
       }
@@ -48,8 +56,12 @@ header {
       width: 50%;
       .flex(row, space-between, nowrap, center);
 
-      @media @small-desktop {
+      @media @tablet {
         width: 100%;
+      }
+
+      @media @mobile {
+        .flex(column, space-between, nowrap, center);
       }
 
       a {
@@ -60,13 +72,19 @@ header {
         text-align: center;
         transition: 1s;
 
+        @media @tablet{
+            color: black;
+        }
+
         &:hover {
           color: lighten(@secondary-color, 50%);
           transition: 0.5s;
         }
 
         @media @mobile {
-          font-size: 2rem;
+          font-size: 3rem;
+          margin: 5% 0;
+          color: @main-color;
         }
       }
     }
