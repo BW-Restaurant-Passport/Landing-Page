@@ -60,6 +60,10 @@ header {
         width: 100%;
       }
 
+      @media @mobile {
+        .flex(column, space-between, nowrap, center);
+      }
+
       a {
         width: 100%;
         font-size: 2.5rem;
@@ -69,7 +73,7 @@ header {
         transition: 1s;
 
         @media @tablet{
-            color: #f77605;
+            color: black;
         }
 
         &:hover {
@@ -78,7 +82,9 @@ header {
         }
 
         @media @mobile {
-          font-size: 2.3rem;
+          font-size: 3rem;
+          margin: 5% 0;
+          color: @main-color;
         }
       }
     }
