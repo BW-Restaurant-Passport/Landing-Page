@@ -487,3 +487,99 @@ header .navbar nav a:hover {
     width: 50%;
   }
 }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.middle-content .about {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .middle-content .about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.middle-content .about .description {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.middle-content .about h3 {
+  font-size: 2.5rem;
+}
+.middle-content .about p {
+  font-size: 1.5rem;
+}
+.headline {
+  display: flex;
+  justify-content: center;
+  background: white;
+}
+.who-we-are {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  background: white;
+}
+@media (max-width: 500px) {
+  .who-we-are {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.who-we-are .top-two {
+  width: 35%;
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+@media (max-width: 500px) {
+  .who-we-are .top-two {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+.who-we-are .bottom-two {
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+@media (max-width: 500px) {
+  .who-we-are .bottom-two {
+    margin: 0 auto;
+  }
+}
+.who-we-are .team-member {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.who-we-are img {
+  max-height: 400px;
+  min-height: 400px;
+  width: auto;
+  height: 0 auto;
+  perspective: 1000px;
+}
+.who-we-are p {
+  font-size: 2rem;
+  min-height: 20rem;
+  background-color: #9dffe4;
+  color: #603bbc;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
