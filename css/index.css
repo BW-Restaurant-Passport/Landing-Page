@@ -10,7 +10,7 @@
   background-color: #9dffe4;
   padding: 10px 20px;
   border: 1px solid #603bbc;
-  border-radius: 50px;
+  border-radius: 5px;
   margin: 15px 0;
   color: #603bbc;
   transition: 0.5s;
@@ -225,7 +225,7 @@ header .welcome a {
   background-color: #9dffe4;
   padding: 10px 20px;
   border: 1px solid #603bbc;
-  border-radius: 50px;
+  border-radius: 5px;
   margin: 15px 0;
   color: #603bbc;
   transition: 0.5s;
@@ -262,6 +262,7 @@ header .navbar h1 {
 header .navbar h1:hover {
   color: #ffffff;
   transition: 0.5s;
+  cursor: pointer;
 }
 @media (max-width: 1200px) {
   header .navbar h1 {
@@ -289,6 +290,11 @@ header .navbar nav a {
   color: #603bbc;
   text-align: center;
   transition: 1s;
+}
+@media (max-width: 1200px) {
+  header .navbar nav a {
+    color: #9dffe4;
+  }
 }
 header .navbar nav a:hover {
   color: #ffffff;
@@ -424,7 +430,7 @@ header .navbar nav a:hover {
 }
 .main-content section .info p {
   margin-right: 2%;
-  width: 40%;
+  width: 50%;
 }
 .main-content section .info p:nth-child(2n) {
   text-align: right;
@@ -438,6 +444,7 @@ header .navbar nav a:hover {
 @media (max-width: 500px) {
   .main-content section .info p {
     text-align: center;
+    width: 100%;
   }
 }
 .main-content section a {
@@ -446,7 +453,7 @@ header .navbar nav a:hover {
   background-color: #9dffe4;
   padding: 10px 20px;
   border: 1px solid #603bbc;
-  border-radius: 50px;
+  border-radius: 5px;
   margin: 15px 0;
   color: #603bbc;
   transition: 0.5s;

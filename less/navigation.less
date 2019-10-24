@@ -43,6 +43,7 @@ header {
       &:hover {
         color: lighten(@secondary-color, 50%);
         transition: 0.5s;
+        cursor: pointer;
       }
 
       @media @tablet {
@@ -67,10 +68,18 @@ header {
         text-align: center;
         transition: 1s;
 
+        @media @tablet{
+            color: @secondary-color;
+        }
+
         &:hover {
           color: lighten(@secondary-color, 50%);
           transition: 0.5s;
         }
+
+        // @media @tablet{
+        //   color: white;
+        // }
 
         @media @mobile {
           font-size: 2rem;
