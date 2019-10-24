@@ -207,7 +207,7 @@ header .welcome {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 2% auto;
+    margin: 3% auto;
     text-align: center;
   }
 }
@@ -293,7 +293,7 @@ header .navbar nav a {
 }
 @media (max-width: 1200px) {
   header .navbar nav a {
-    color: #9dffe4;
+    color: #f77605;
   }
 }
 header .navbar nav a:hover {
@@ -302,7 +302,7 @@ header .navbar nav a:hover {
 }
 @media (max-width: 500px) {
   header .navbar nav a {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
 }
 .footer-area {
