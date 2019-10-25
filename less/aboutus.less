@@ -1,6 +1,12 @@
+
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.headline{
+    color: @main-color;
 }
 
 .middle-content .about{
@@ -16,21 +22,25 @@
         display:flex;
         flex-direction: column;
         justify-content: center;
+        padding: 10%;
        
     }
 
     h1 {
-        // border: 5px solid blue;
+        color: @main-color;
     }
 
     h3{
         // border: 5px solid silver;
+        color: @main-color;
         font-size: 2.5rem;
     }
 
     p {
         // border: 5px solid green;
-        font-size: 1.5rem;
+        color: @main-color;
+        font-size: 2.5rem;
+        font-family: "Comfortaa", cursive;
     }
 
 }
@@ -39,6 +49,8 @@
     display: flex;
     justify-content: center;
     background: @background;
+    background: linear-gradient(to left, @secondary-color, white);
+    padding: 10%;
 }
 
 
@@ -51,7 +63,7 @@
     max-width: 1200px;
     height: auto;
     margin: 0 auto;
-    background: linear-gradient(to right, @main-color, @secondary-color);
+    background: linear-gradient(to right, @secondary-color, white);
 
     @media @mobile{
         .flex(column, space-around, nowrap, center);
@@ -105,6 +117,7 @@
         width: auto;
         height: 0 auto;
         perspective: 1000px;
+        box-shadow: 3px, 4px, 5px, 6px, @main-color;
     }
 
     p{
@@ -126,9 +139,10 @@
 
 
 img{
-	background: #f1f2f6;
+	border: 5px solid #f1f2f6;
 	margin: 0;
-	padding: 0;
+    padding: 0;
+    box-shadow: @main-color;
 }
 
 .image-area
@@ -193,7 +207,10 @@ img{
 	width: 100%;
 	transform: perspective(400px) rotateY(90deg);
 	transform-origin: right;
-	transition: 1s;
+    transition: 1s;
+    @media @mobile{
+        
+    }
 }
 
 .img-wrapper:hover h2

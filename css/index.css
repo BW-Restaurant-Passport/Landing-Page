@@ -19,6 +19,12 @@
   background-color: #ffffff;
   transition: 0.5s;
 }
+.team-member h2 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-right: 25%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -153,7 +159,7 @@ table {
 html {
   font-size: 62.5%;
 }
-.container {
+.container-home {
   width: 100%;
   margin: 0 auto;
 }
@@ -491,6 +497,9 @@ header .navbar nav a:hover {
   max-width: 1200px;
   margin: 0 auto;
 }
+.headline {
+  color: #603bbc;
+}
 .middle-content .about {
   display: flex;
 }
@@ -508,17 +517,26 @@ header .navbar nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 10%;
+}
+.middle-content .about h1 {
+  color: #603bbc;
 }
 .middle-content .about h3 {
+  color: #603bbc;
   font-size: 2.5rem;
 }
 .middle-content .about p {
-  font-size: 1.5rem;
+  color: #603bbc;
+  font-size: 2.5rem;
+  font-family: "Comfortaa", cursive;
 }
 .headline {
   display: flex;
   justify-content: center;
   background: white;
+  background: linear-gradient(to left, #9dffe4, white);
+  padding: 10%;
 }
 .who-we-are {
   display: flex;
@@ -528,7 +546,7 @@ header .navbar nav a:hover {
   max-width: 1200px;
   height: auto;
   margin: 0 auto;
-  background: linear-gradient(to right, #603bbc, #9dffe4);
+  background: linear-gradient(to right, #9dffe4, white);
 }
 @media (max-width: 500px) {
   .who-we-are {
@@ -578,6 +596,7 @@ header .navbar nav a:hover {
   width: auto;
   height: 0 auto;
   perspective: 1000px;
+  box-shadow: 3px, 4px, 5px, 6px, #603bbc;
 }
 .who-we-are p {
   font-size: 2rem;
@@ -589,9 +608,10 @@ header .navbar nav a:hover {
   justify-content: center;
 }
 img {
-  background: #f1f2f6;
+  border: 5px solid #f1f2f6;
   margin: 0;
   padding: 0;
+  box-shadow: #603bbc;
 }
 .image-area {
   top: 50%;
